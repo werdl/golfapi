@@ -1,14 +1,4 @@
-N,M,L,H,G,B='POST','uuid','GET','r','w',open
-from flask import request as J,jsonify as E,Flask
-import json as A,os,requests
-from uuid import uuid4 as K
-F=Flask(__name__)
-C='i'
-D='c'
-if not os.path.exists(C):
-	with B(C,G)as I:A.dump([],I)
-if not os.path.exists(D):
-	with B(D,G)as I:A.dump([],I)
+from flask import request as J,jsonify as E,Flask as Z;import json as A,os,requests;from uuid import uuid4 as K;F,C,D,N,M,L,H,G,B=Z(__name__),'i','c','POST','uuid','GET','r','w',open
 @F.route('/i',methods=[L])
 def O():
 	with B(C,H)as D:F=A.load(D)
