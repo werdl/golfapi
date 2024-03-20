@@ -30,6 +30,3 @@ def R():
 	with B(D,H)as F:I=A.load(F);I.append(C)
 	with B(D,G)as F:A.dump(I,F)
 	return E(C)
-from flask import request as J,jsonify as E,Flask
-import json as A,os,requests
-from uuid import uuid4 as K
